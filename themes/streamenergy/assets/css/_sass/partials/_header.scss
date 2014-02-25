@@ -1,0 +1,106 @@
+.site-header {
+	height: 129px;
+	background: url(../i/page-top-stripe.png) top repeat-x;
+	border-bottom: 4px solid #ffd2a3;
+	padding-top: 8px;
+	
+	a {
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #6b6b6b;
+	}
+	a.button {
+		color: #fff;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	
+	div {
+		position: relative;
+		max-width: 970px;
+		margin: auto;
+	}
+	
+	span.logo {
+		display: block;
+		width: 163px;
+		height: 160px;
+		position: absolute;
+		left: 50%;
+		top: 25px;
+		margin-left: -81.5px;
+		background: url(../i/logo-background.png) bottom no-repeat;
+		text-indent: -9999em;
+		
+		a {
+			display: block;
+			width: 81px;
+			height: 138px;
+			position: absolute;
+			left: 50%;
+			top: -4px;
+			margin-left: -40.5px;
+			background: url(../i/streamenergylogo.png) no-repeat;
+		}
+	}
+	
+	ul.utility {
+		@include inline-block-list();
+		
+		position: absolute;
+		top: -3px;
+		right: 0;
+		padding: 10px;
+		background: #f2f2f2;
+		-webkit-border-bottom-right-radius: 5px;
+		-webkit-border-bottom-left-radius: 5px;
+		-moz-border-radius-bottomright: 5px;
+		-moz-border-radius-bottomleft: 5px;
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		border: 1px solid #bebebe;
+		border-width: 0 1px 1px;
+		
+		li {
+			&:first-child {
+				border-right: 1px solid #000;
+				padding-right: 17px;
+				margin-right: 14px;
+			}
+		}
+			
+	}
+	
+	nav {
+		padding-top: 72px;
+		ul {
+			@include inline-block-list();
+			
+			&:first-child {
+				float: left;
+				width: 40%;
+				
+				li:last-child {
+					float: right;
+				}
+			}
+			&:last-child {
+				float: right;
+				width: 40%;
+				
+				li {
+					width: 32%;
+					
+					&:nth-child(2) {
+						text-align: center;
+					}
+					&:last-child {
+						text-align: right;
+					}
+				}
+			}
+		}
+	}	
+
+}

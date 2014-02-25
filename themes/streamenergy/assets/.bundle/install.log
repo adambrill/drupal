@@ -1,0 +1,7 @@
+# Logfile created on 2014-02-12 08:18:16 -0800 by logger.rb/36483
+I, [2014-02-12T08:18:16.628807 #707]  INFO -- : 0:  chunky_png (1.2.8) from /Library/Ruby/Gems/2.0.0/specifications/chunky_png-1.2.8.gemspec
+I, [2014-02-12T08:18:16.629737 #707]  INFO -- : 0:  fssm (0.2.10) from /Library/Ruby/Gems/2.0.0/specifications/fssm-0.2.10.gemspec
+I, [2014-02-12T08:18:16.630030 #707]  INFO -- : 0:  sass (3.2.10) from /Library/Ruby/Gems/2.0.0/specifications/sass-3.2.10.gemspec
+I, [2014-02-12T08:18:16.630306 #707]  INFO -- : 0:  compass (0.12.2) from /Library/Ruby/Gems/2.0.0/specifications/compass-0.12.2.gemspec
+I, [2014-02-12T08:18:16.630567 #707]  INFO -- : 0:  compass-h5bp (0.1.1) from /Library/Ruby/Gems/2.0.0/specifications/compass-h5bp-0.1.1.gemspec
+I, [2014-02-12T08:18:16.630801 #707]  INFO -- : 0:  bundler (1.5.1) from /Library/Ruby/Gems/2.0.0/specifications/bundler-1.5.1.gemspec

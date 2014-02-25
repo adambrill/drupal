@@ -1,0 +1,382 @@
+/* This file is where the styling for modules will go. This employes the concepts of OOCSS, creating common base classes (using <article> as the base), and extending as necessary */
+
+/*
+
+<article class="module-name">
+	<header>
+		<h2>Module Name</h2>
+	</header>
+	<div class="content">
+		<!-- Content here -->
+	</div>
+</article>
+
+*/
+
+article {
+	// Careful what's added here. This is the base class, and is used everywhere	
+}
+
+section.main-banner {
+	background: url(../i/banner-energy-is-just-the-beginning.jpg) no-repeat top center;
+	
+	div.inner {
+		height: 466px;
+		background: url(../i/main-banner-stripe.png) repeat-x bottom;
+		text-indent: -9999em;
+	}
+}
+
+section.intro {
+	div.header {
+		background: #0971ce;
+		text-align: center;
+		padding: 25px 0;
+		color: white;
+		
+		h1 {
+			font-size: 4.8em;
+			line-height: 1em;
+		}
+		p {
+			font-size: 1.5em;
+		}
+	}
+	div.content {
+		height: 541px;
+		padding: 45px 0;
+		background: url(../i/bg-intro-content.jpg) no-repeat top center;
+		border-bottom: 5px solid #ffa409;
+		
+		div.inner {
+			width: 705px;
+			margin: auto;
+		}
+		h2 {
+			color: #0971ce;
+			text-transform: uppercase;
+			line-height: 1em;
+		}
+	}
+	div.footer {
+		padding: 25px;
+		text-align: center;
+		color: #898989;
+		
+		span {
+			color: #0971ce;
+		}
+	}
+}
+
+section.package {
+	margin-bottom: 50px;
+	
+	div.inner {
+		@include border-radius(10px);
+		
+		position: relative;
+		width: 970px;
+		margin: auto;
+		padding: 40px;
+		background: #fff;
+		border: 1px solid;
+		
+		span.ribbon-best {
+			position: absolute;
+			top: -3px;
+			right: -4px;
+			width: 94px;
+			height: 92px;
+			background: url(../i/ribbon-best.png) no-repeat;
+		}
+	}
+	
+	p.help {
+		text-align: center;
+		color: #fff;
+	}
+	
+	h3 {
+		float: left;
+		color: #0971ce;
+	}
+	h4 {
+		text-transform: uppercase;
+		font-size: 1em;
+	}
+	
+	
+	
+	ul.products {
+		@include inline-block-list();
+		
+		float: left;
+		
+		li {
+			position: relative;
+			margin-right: 60px;
+			text-align: center;
+			
+			&.identity-protection {
+				h4 {
+					color: #7e9bb5;
+				}
+				a.button {
+					background-color: #7e9bb5;
+				}
+			}
+			
+			&.tech-support {
+				h4 {
+					color: #b58789;
+				}
+				a.button {
+					background-color: #b58789;
+				}
+				&:after {
+					left: 120%;
+				}
+			}
+			
+			&.credit-monitoring {
+				h4 {
+					color: #8ba170;
+				}
+				a.button {
+					background-color: #8ba170;
+				}
+			}
+		}
+	}
+	
+	div.savings {
+		@include border-radius(50%);
+		
+		position: relative;
+		float: left;
+		margin-left: -25px;
+		width: 113px;
+		height: 113px;
+		background: #0971ce;
+		text-align: center;
+		color: #fff;
+		font-weight: bold;
+		font-size: 1.5em;
+		line-height: 1.2em;
+		padding-top: 15px;
+		
+		&:before,
+		&:after {
+			content: ".";
+			position: absolute;
+			top: -45px;
+			left: 50%;
+			width: 1px;
+			height: 45px;
+			background: #ccc;
+			text-indent: -9999em;
+		}
+		&:after {
+			top: 100%;
+		}
+	}
+	
+	div.pricing {
+		float: left;
+		text-align: center;
+		
+		h4 {
+			color: #0971ce;
+			font-size: 2.5em;
+			
+			span {
+				display: block;
+				color: #6b6b6b;
+				font-size: .33em;
+				font-style: italic;
+			}
+		}
+		p.month-free {
+			border-bottom: 1px solid #d0d0d0;
+			color: #0971ce;
+			font-size: 1.33em;
+		}
+	}
+	
+	&.platinum {
+		background: #0971ce;
+		padding-bottom: 35px;
+		
+		div.inner {
+			border-color: #07579f;
+		}
+		
+		ul.products li {
+			
+			&:after {
+				content: "+";
+				position: absolute;
+				left: 100%;
+				top: 50px;
+				font-weight: bold;
+				font-size: 4em;
+				color: #898989;
+			}
+			&:last-child:after {
+				content: "";
+			}
+		}
+	}
+	&.gold {
+		div.inner {
+			background-color: #f6f6f6;
+			border-color: #c1dbf2;
+		}
+		div.savings {
+			background-color: #fafafa;
+			color: #0971ce;
+			border: 1px solid #ccc;
+		}
+	}
+	&.silver {
+		div.inner {
+			padding-top: 10px;
+			background-color: #fff;
+			border-color: #cdcdcd;
+		}
+		h3 {
+			text-align: center;
+			float: none;
+			font-size: 1.5em;
+		}
+		h4 {
+			font-size: 1.2em;
+		}
+		h5 {
+			font-size: 2em;
+			color: #0971ce;
+			
+			span {
+				font-size: .5em;
+				font-style: italic;
+				display: block;
+				color: #6b6b6b;
+			}
+		}
+		ul.products {
+			width: 100%;
+			li {
+				width: 30%;
+				margin-right: 4%;
+				padding-right: 4%;
+				border-right: 1px solid #ccc;
+				
+				p.month-free {
+					font-size: 1.3em;
+					color: #0971ce;
+				}
+				a.button {
+					background-color: #0971ce;
+				}
+			}
+			li:last-child {
+				margin-right: 0;
+				padding-right: 0;
+				border-right: 0;
+			}
+		}
+		
+		p.footnote {
+			text-align: center;
+			font-size: .85em;
+		}
+	}
+}
+
+section.choose-your-area {
+	margin-bottom: 50px;
+	padding: 1px;
+	text-align: center;
+	background: #0971ce;
+	color: #fff;
+	
+	p {
+		line-height: 1em;
+		margin-bottom: 0;
+		font-size: 1.5em;
+	}
+}
+
+section.product-details {
+	margin-bottom: 30px;
+	border-top: 3px solid #b3b3b3;
+	background: #ededed;
+	border-spacing: 0;
+	
+	div.col {
+		&.bg {
+			background: url(../i/product-details-identity-protection.jpg) no-repeat top center;
+		}
+		&:not(.bg) {
+			padding: 20px 40px;
+		}
+		&:first-child {
+			border-right: 5px solid #7e9bb5;
+		}
+		div.inner {
+			width: 450px;
+		}
+	}
+	p.subscription-features {
+		clear: both;
+	}
+	ul {
+		padding-left: 0;
+		
+		li {
+			padding-left: 40px;
+			padding-bottom: 10px;
+			list-style: none;
+			background: url(../i/img-checkbox-checked.png) no-repeat left top;
+			font-size: 1.3em;
+			
+			span {
+				display: block;
+			}
+		}
+	}
+	
+	&.identity-protection {
+		h2, ul li {
+			color: #7e9bb5;
+		}
+		img {
+			float: right;
+			margin-top: 50px;
+			margin-bottom: 100px;
+		}
+	}
+	
+	&.tech-support {
+		h2, ul li {
+			color: #b58789;
+		}
+		div.inner {
+			float: right;
+		}
+		img {
+			float: left;
+			margin: 0 20px 20px 0;
+		}
+	}
+	&.credit-monitoring {
+		h2, ul li {
+			color: #8ba170;
+		}
+		img {
+			float: right;
+			margin-top: 50px;
+		}
+	}
+}
