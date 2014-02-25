@@ -17,3 +17,33 @@ section.main-banner {
 section.main-banner div.inner {
   height: 250px;
 }
+
+.site-header nav ul li,
+.site-header nav ul:last-child li:last-child,
+.site-header nav ul:first-child li:last-child {
+	float: left;
+	text-align: center;
+}
+
+/* one item */
+.site-header nav ul li:first-child:nth-last-child(1) {
+    width: 100%;
+}
+
+/* two items */
+.site-header nav ul li:first-child:nth-last-child(2),
+.site-header nav ul li:first-child:nth-last-child(2) ~ li {
+    width: 50%;
+}
+
+/* three items */
+.site-header nav ul li:first-child:nth-last-child(3),
+.site-header nav ul li:first-child:nth-last-child(3) ~ li {
+    width: 33.3333%;
+}
+
+/* four items */
+.site-header nav ul li:first-child:nth-last-child(4),
+.site-header nav ul li:first-child:nth-last-child(4) ~ li {
+    width: 25%;
+}
