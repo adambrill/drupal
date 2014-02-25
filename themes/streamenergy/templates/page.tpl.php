@@ -107,8 +107,8 @@
     <nav>
       <?php
 
-      $main_menu_start = array_slice($main_menu, 0, count($main_menu) / 2);
-      $main_menu_end = array_slice($main_menu, count($main_menu) / 2);
+      $main_menu_start = array_slice($main_menu, 0, ceil(count($main_menu) / 2));
+      $main_menu_end = array_slice($main_menu, ceil(count($main_menu) / 2));
       ?>
 
       <?php if ($main_menu_start): ?>
