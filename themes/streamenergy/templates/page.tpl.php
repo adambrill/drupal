@@ -246,9 +246,9 @@
       <div class="grid three">
         <div class="col">
           <ul>
-            <li><a href="#"><img src="themes/streamenergy/assets/i/img-footer-get-free-energy.png" alt="Get Free Energy" width="159" height="44" /></a></li>
-            <li><a href="#"><img src="themes/streamenergy/assets/i/img-footer-renew-my-contract.png" alt="Renew My Contract" width="120" height="45" /></a></li>
-            <li><a href="#"><img src="themes/streamenergy/assets/i/img-footer-powercenter.png" alt="Login to view your PowerCenter" width="184" height="33" /></a></li>
+            <li><a href="#"><img src="/themes/streamenergy/assets/i/img-footer-get-free-energy.png" alt="Get Free Energy" width="159" height="44" /></a></li>
+            <li><a href="#"><img src="/themes/streamenergy/assets/i/img-footer-renew-my-contract.png" alt="Renew My Contract" width="120" height="45" /></a></li>
+            <li><a href="#"><img src="/themes/streamenergy/assets/i/img-footer-powercenter.png" alt="Login to view your PowerCenter" width="184" height="33" /></a></li>
           </ul>
         </div>
         <div class="col quick-links">
@@ -283,8 +283,8 @@
         <p>© 2005-2013 SGE IP Holdco, LLC. All rights reserved. Licensed in TX, GA, PA, MD, NJ, NY, &amp; DC<br />
         (TX #10104, GA #GM-38, NJ #ESL-0109 &amp; GSL-0120, PA #A-2010-2181867 &amp; A-2012-2308991, MD #IR-2072 &amp; IR-2742, NY #STRM, DC EA11-11)</p>
         <ul>
-          <li><img src="themes/streamenergy/assets/i/img-bbb-logo.png" alt="BBB" /></li>
-          <li><img src="themes/streamenergy/assets/i/img-dsa-member-logo.png" alt="DSA Member" /></li>
+          <li><img src="/themes/streamenergy/assets/i/img-bbb-logo.png" alt="BBB" /></li>
+          <li><img src="/themes/streamenergy/assets/i/img-dsa-member-logo.png" alt="DSA Member" /></li>
         </ul>
       </div>
     </div>
