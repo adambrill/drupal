@@ -1,0 +1,19 @@
+h1.title {
+	color: #0971ce;
+	font-size: 48px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.center-content {
+  width: 970px;
+  margin: 0 auto;
+}
+
+section.main-banner {
+  background: url(../i/banner-home.jpg) no-repeat top center;
+  background-size: cover;
+}
+section.main-banner div.inner {
+  height: 250px;
+}

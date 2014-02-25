@@ -6,6 +6,7 @@ version = VERSION
 core = 7.x
 
 stylesheets[all][] = assets/css/global.css
+stylesheets[all][] = assets/css/theme.css
 
 regions[header] = Header
 regions[help] = Help

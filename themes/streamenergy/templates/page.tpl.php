@@ -105,50 +105,46 @@
       )); ?>
     <?php endif; ?>
     <nav>
-      <ul>
-        <li><a href="#">Rates, Plans, &amp; Services</a></li>
-        <li><a href="#">Opportunity</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Company</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#" class="button">Pay My Bill</a></li>
-      </ul>
+      <?php
+
+      $main_menu_start = array_slice($main_menu, 0, count($main_menu) / 2);
+      $main_menu_end = array_slice($main_menu, count($main_menu) / 2);
+      ?>
+
+      <?php if ($main_menu_start): ?>
+        <?php print theme('links__system_main_menu', array(
+          'links' => $main_menu_start,
+        )); ?>
+      <?php endif; ?>
+      <?php if ($main_menu_end): ?>
+        <?php print theme('links__system_main_menu', array(
+          'links' => $main_menu_end,
+        )); ?>
+      <?php endif; ?>
     </nav>
   </div>
 </header>
 
 <div class="wrapper">
 
-    <section class="main-banner">
-      <div class="inner">
-        Energy is <em>just</em> the beginning
-      </div>
-    </section>
-
-
-
-
-    
+  <section class="main-banner">
+    <div class="inner">
+      
+    </div>
+  </section>
+  
+  <div class="center-content">
+  
 
     
-
+<!--
     <?php if ($main_menu): ?>
-      <div id="main-menu" class="navigation">
-        <?php print theme('links__system_main_menu', array(
-          'links' => $main_menu,
-          'attributes' => array(
-            'id' => 'main-menu-links',
-            'class' => array('links', 'clearfix'),
-          ),
-          'heading' => array(
-            'text' => t('Main menu'),
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
-      </div> <!-- /#main-menu -->
+      <?php print theme('links__system_main_menu', array(
+        'links' => $main_menu,
+      )); ?>
     <?php endif; ?>
+-->
+
 
     
 
@@ -242,6 +238,7 @@
 
 
 
+  </div>
 </div>
 
 <footer class="site-footer">
